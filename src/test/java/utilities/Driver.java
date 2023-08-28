@@ -68,6 +68,10 @@ public class Driver {
     //to close open driver
     public static void closeDriver() {
         if (driver != null) {
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+            }
             driver.close();
             driver = null;
         }
@@ -75,6 +79,10 @@ public class Driver {
 
     public static void quitDriver() {
         if (driver != null) {
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+            }
             driver.quit();
 
             driver = null;

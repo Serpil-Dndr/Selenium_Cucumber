@@ -8,27 +8,19 @@ import java.util.Properties;
 public class ConfigReader {
 
     static Properties properties;
-
     static {
-
-        String filePath= "configuration.properties";
         try {
-
-            FileInputStream fis= new FileInputStream(filePath);
-            properties= new Properties();
+            String filePath = "configuration.properties";
+            FileInputStream fis = new FileInputStream(filePath);
+            properties = new Properties();
             properties.load(fis);
-
-
+        } catch (FileNotFoundException e) {
+            System.out.println("file could not be found");
         } catch (IOException e) {
-            System.out.println("File could not loaded");
-
+            System.out.println("Could not be able to load properties file");
         }
-
     }
-
-    public static String getProperty(String key){
-
-        return properties.getProperty(key);
-
+    public static String getProperty(String key){  // qualityDemyUrl
+        return properties.getProperty(key); // https://www.qualitydemy.com/
     }
 }
