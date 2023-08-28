@@ -28,4 +28,10 @@ public class AmazonPage {
     @FindBy(xpath = "//div[@class='a-section aok-relative s-image-square-aspect']")
     public WebElement firstProductOFSearch;
 
+
+    @FindBy(xpath = "//a[text()='My cqqqqqqqqqqqqqqqqqqqqqqqqqqqourses']")
+    public WebElement verifyMycourses;
+    @FindBy(xpath = "//p[text()='Provide your valid logiqqqqqqqqqqn credentials']")
+    public WebElement enterYourValidCredText;
+
 }
