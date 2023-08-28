@@ -2,7 +2,13 @@ package stepdefinitions;
 
 public class Serpil {
 
-    public void asil(){
-        System.out.println("yeni commit");
+    public static void main(String[] args) {
+
+        System.out.println("hello everyone");
+        int asil = 33;
+        String asil2 =" github practice";
+
+
+
     }
 }
