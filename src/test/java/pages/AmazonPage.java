@@ -13,7 +13,14 @@ public class AmazonPage {
     }
     @FindBy(id = "twotabsearchtextbox")
     public WebElement amazonSearchBox;
+    @FindBy (xpath = "//a[@class='btn btn-sign-in-simple']")
+    public WebElement homePageSighInButton ;
 
+    @FindBy(id="login-email")
+    public WebElement loginPageEmailTextbox;
+
+    @FindBy(id="login-password")
+    public WebElement loginPagePasswordTextbox;
 
     @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")
     public WebElement amazonResult;
