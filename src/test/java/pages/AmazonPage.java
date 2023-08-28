@@ -19,11 +19,13 @@ public class AmazonPage {
     @FindBy(id="login-email")
     public WebElement loginPageEmailTextbox;
 
-    @FindBy(id="login-password")
-    public WebElement loginPagePasswordTextbox;
+    @FindBy(xpath = "//button[@class='btn red radius-5 mt-4 w-100']")
+    public WebElement loginPageButton;
 
-    @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")
-    public WebElement amazonResult;
+    @FindBy(xpath = "//a[text()='My courses']")
+    public WebElement verifyMycourses;
+    @FindBy(xpath = "//p[text()='Provide your valid login credentials']")
+    public WebElement enterYourValidCredText;
 
     @FindBy(xpath = "//div[@class='a-section aok-relative s-image-square-aspect']")
     public WebElement firstProductOFSearch;
