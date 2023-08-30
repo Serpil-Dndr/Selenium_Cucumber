@@ -13,27 +13,14 @@ public class AmazonPage {
     }
     @FindBy(id = "twotabsearchtextbox")
     public WebElement amazonSearchBox;
-    @FindBy (xpath = "//a[@class='btn btn-sign-in-simple']")
-    public WebElement homePageSighInButton ;
 
-    @FindBy(id="login-email")
-    public WebElement loginPageEmailTextbox;
-
-    @FindBy(xpath = "//button[@class='btn red radius-5 mt-4 w-100']")
-    public WebElement loginPageButton;
-
-    @FindBy(xpath = "//a[text()='My courses']")
-    public WebElement verifyMycourses;
-    @FindBy(xpath = "//p[text()='Provide your valid login credentials']")
-    public WebElement enterYourValidCredText;
+    @FindBy ( xpath = "//div[@class='sg-col-14-of-20 sg-col-18-of-24 sg-col s-breadcrumb sg-col-10-of-16 sg-col-6-of-12']")
+    public WebElement amazonResult;
 
     @FindBy(xpath = "//div[@class='a-section aok-relative s-image-square-aspect']")
     public WebElement firstProductOFSearch;
 
 
-    @FindBy(xpath = "//a[text()='My cqqqqqqqqqqqqqqqqqqqqqqqqqqqourses']")
-    public WebElement verifyMycourses;
-    @FindBy(xpath = "//p[text()='Provide your valid logiqqqqqqqqqqn credentials']")
-    public WebElement enterYourValidCredText;
+
 
 }
